@@ -19,8 +19,13 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    domain: "\e[31m╭──────────────────────────────────────────────────────────────────────────────────────────────────────────╮\e[0m\n\e[31m│\e[0m
+      \                                                                                                         \e[31m│\e[0m\n\e[31m│\e[0m
+      \   You are trying to run the amd64 binary on an M1 system.                                               \e[31m│\e[0m\n\e[31m│\e[0m
+      \   Please consider running the darwin/arm64 binary instead.                                              \e[31m│\e[0m\n\e[31m│\e[0m
+      \   Download at https://github.com/kubernetes/minikube/releases/download/v1.27.1/minikube-darwin-arm64
+      \   \e[31m│\e[0m\n\e[31m│\e[0m                                                                                                          \e[31m│\e[0m\n\e[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯\e[0m\n192.168.49.2.nip.io"
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
